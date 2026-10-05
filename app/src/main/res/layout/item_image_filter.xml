@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:layout_gravity="center_horizontal"
+    n1:clickable="true"
+    n1:onClick="myClickHandler"
+    n1:orientation="vertical"
+    n1:padding="@dimen/_2sdp">
+
+    <androidx.cardview.widget.CardView
+        n1:id="@+id/cvFilter"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="match_parent"
+            n1:padding="@dimen/_2sdp">
+
+            <androidx.cardview.widget.CardView
+                n1:id="@+id/cvFilterImage"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    n1:id="@+id/filter_image"
+                    n1:layout_width="@dimen/_45sdp"
+                    n1:layout_height="@dimen/_45sdp"
+                    n1:layout_alignParentTop="true"
+                    n1:scaleType="fitXY"
+                    n1:src="@drawable/img_filter_default"
+                    n1:visibility="visible" />
+
+
+                <!--<android.opengl.GLSurfaceView
+                    n1:layout_width="@dimen/_45sdp"
+                    n1:layout_height="@dimen/_45sdp"
+                    n1:id="@+id/effectView" />-->
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                n1:id="@+id/tvFilterName"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_below="@id/cvFilterImage"
+                n1:layout_centerHorizontal="true"
+                n1:fontFamily="@font/poppins_regular"
+                n1:text="@string/filter"
+                n1:textColor="@color/colorPrimaryVariant" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

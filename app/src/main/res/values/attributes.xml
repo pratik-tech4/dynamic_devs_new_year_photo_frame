@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <attr name="item_width" format="integer"/>
+    <attr name="animation_duration" format="integer"/>
+    <attr name="handle_bar_color" format="color"/>
+    <attr name="line_color" format="color"/>
+    <attr name="line_size" format="integer"/>
+    <attr name="need_draw_line" format="boolean"/>
+    <attr name="need_draw_outer_line" format="boolean"/>
+    <attr name="piece_padding" format="dimension"/>
+    <attr name="radian" format="float"/>
+    <attr name="selected_line_color" format="color"/>
+    <attr name="mask" format="reference"/>
+    <attr name="image" format="reference"/>
+    <attr name="frame" format="reference"/>
+
+
+    <declare-styleable name="StickerView">
+        <attr name="showIcons" format="boolean" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="bringToFrontCurrentSticker" format="boolean" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderAlpha" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">New Year Photo Frame</string>
+    <string name="file_path">NewYearPhotoFrameMaker</string>
+
+    <string name="txt_splash">Decorate your pictures with Happy New Year vibes!</string>
+    <string name="let_s_start">Let\'s Start!</string>
+    <string name="photo_editor">Photo Editor</string>
+    <string name="photo_frame">Photo Frame</string>
+    <string name="toast_api_failure">Could not get frames at a moment, try again later!</string>
+    <string name="please_wait">Please Wait..</string>
+
+    <string name="desc_btn_font_picker">Button of font picker</string>
+    <string name="font_txt">abcd</string>
+    <string name="please_try_again">Please try again!</string>
+    <string name="frame_edit">Frame Edit</string>
+
+    <string name="frame_tag">Frame</string>
+    <string name="text">Text</string>
+    <string name="sticker">Sticker</string>
+
+    <string name="desc_btn_select_frame">Button of select frame</string>
+    <string name="desc_btn_back">Back Button</string>
+    <string name="desc_btn_sticker">Button of sticker</string>
+
+    <string name="do_you_want_to_exit">Are you sure you want to go back ? Your changes will be lost.</string>
+    <string name="save_your_editing">Your changes will be lost</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="please_wait_for_a_few_minutes_nwe_are_processing_your_video">Please wait for a few minutes...\n We are processing your image</string>
+    <string name="create_another_photo">Create New Photo</string>
+    <string name="share_photo">Share</string>
+
+    <string name="desc_btn_home">Go to Home button of PreviewImage Activity</string>
+    <string name="desc_btn_insta">Share on Instagram button of PreviewImage Activity</string>
+    <string name="desc_btn_whatsapp">Share on Whatsapp button of PreviewImage Activity</string>
+    <string name="desc_btn_facebook">Share on Facebook button of PreviewImage Activity</string>
+    <string name="desc_btn_share">Share button of PreviewImage Activity</string>
+    <string name="desc_img_mycreation">Image button of my creation</string>
+
+    <string name="my_creation">My Studio</string>
+    <string name="not_at_collection">No Images Found!</string>
+
+    <string name="camera">Camera</string>
+    <string name="title_gallery">Gallery</string>
+
+    <string name="title_editor">Photo Editor</string>
+    <string name="filter">Filter</string>
+    <string name="blur">Blur</string>
+    <string name="stickers">Stickers</string>
+
+    <string name="filter_normal">Normal</string>
+    <string name="starlit">Starlit</string>
+    <string name="bluemess">BlueMess</string>
+    <string name="struck">Struck</string>
+    <string name="lime">Lime</string>
+    <string name="whisper">Whisper</string>
+    <string name="amazon">Amazon</string>
+    <string name="adele">Adele</string>
+    <string name="cruz">cruz</string>
+    <string name="metropolis">Metropolis</string>
+    <string name="audrey">Audrey</string>
+    <string name="rise">Rise</string>
+    <string name="mars">Mars</string>
+    <string name="april">April</string>
+    <string name="haan">Haan</string>
+    <string name="oldman">OldMan</string>
+    <string name="clarendon">Clarendon</string>
+
+    <string name="are_you_sure_want_to_exit">Are You Sure want to exit?</string>
+
+</resources>

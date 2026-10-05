@@ -1,0 +1,67 @@
+[versions]
+agp = "9.3.0"
+androidSpinkitVersion = "1.4.0"
+junit = "4.14-SNAPSHOT"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+playServicesAds = "24.4.0"
+shimmer = "0.5.0"
+swiperefreshlayout = "1.1.0"
+
+imagepicker = "2.4.5"
+sdpAndroid = "1.1.1"
+glide = "4.16.0"
+okhttpBom = "5.1.0"
+retrofit = "2.9.0"
+gson = "2.11.0"
+converterGson = "2.9.0"
+blurry = "4.0.1"
+keyboardheightprovider = "v1.0.0"
+androidShapeImageview = "0.9.3"
+gpuimagePlus = "3.2.0-16k"
+androidImageCropper = "4.3.3"
+androidphotofilters = "1.0.2"
+lottie = "6.6.2"
+
+
+[libraries]
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+
+
+imagepicker = { module = "com.github.esafirm.android-image-picker:imagepicker", version.ref = "imagepicker" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+okhttp = { module = "com.squareup.okhttp3:okhttp" }
+okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttpBom" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+blurry = { module = "jp.wasabeef:blurry", version.ref = "blurry" }
+keyboardheightprovider = { module = "com.github.ConsultantPlus-Mobile:KeyboardHeightProvider", version.ref = "keyboardheightprovider" }
+android-shape-imageview = { module = "com.github.siyamed:android-shape-imageview", version.ref = "androidShapeImageview" }
+gpuimage-plus = { module = "org.wysaid:gpuimage-plus", version.ref = "gpuimagePlus" }
+android-image-cropper = { module = "com.vanniktech:android-image-cropper", version.ref = "androidImageCropper" }
+ybq-android-spinkit = { module = "com.github.ybq:Android-SpinKit", version.ref = "androidSpinkitVersion" }
+androidphotofilters = { module = "com.github.zomato:androidphotofilters", version.ref = "androidphotofilters" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

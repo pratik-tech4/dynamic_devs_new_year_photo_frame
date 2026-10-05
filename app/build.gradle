@@ -1,0 +1,146 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'newyearphotoframes.newyeargreetings.photoeditor.happynewyear'
+    compileSdk 37
+    ndkVersion "27.0.12077973"   // ✅ Required – 16 KB support starts from NDK r26b
+
+    defaultConfig {
+        //applicationId "com.happynewyearphotoframes.newyeargreetings.photocollege.happynewyear"
+        applicationId "newyearphotoframes.newyeargreetings.photoeditor.happynewyear"
+        minSdk 24
+        targetSdk 37
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+                arguments "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "ADMOB_INTERSTITIAL_ID", "\"ca-app-pub-3940256099942544/1033173712aa\""
+            buildConfigField "String", "ADMOB_BANNER_ID", "\"ca-app-pub-3940256099942544/6300978111\""
+            buildConfigField "String", "ADMOB_NATIVE_ID", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField  "String", "ADMOB_APP_OPEN_ID", "\"ca-app-pub-3940256099942544/9257395921\""
+            buildConfigField "String", "AD_MOB_REWARD_ID", "\"ca-app-pub-3940256099942544/5224354917abc\""
+
+            manifestPlaceholders = [admobAppId: "ca-app-pub-3940256099942544~3347511713"]
+
+        }
+
+        debug {
+            buildConfigField "String", "ADMOB_INTERSTITIAL_ID", "\"ca-app-pub-3940256099942544/1033173712aa\""
+            buildConfigField "String", "ADMOB_BANNER_ID", "\"ca-app-pub-3940256099942544/6300978111a\""
+            buildConfigField "String", "ADMOB_NATIVE_ID", "\"ca-app-pub-3940256099942544/2247696110a\""
+            buildConfigField  "String", "ADMOB_APP_OPEN_ID", "\"ca-app-pub-3940256099942544/9257395921a\""
+            buildConfigField "String", "AD_MOB_REWARD_ID", "\"ca-app-pub-3940256099942544/5224354917abca\""
+
+            manifestPlaceholders = [admobAppId: "ca-app-pub-3940256099942544~3347511713"]
+
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig = true
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            version "3.31.6"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = false
+        }
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation project(':cropiwa')
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.swiperefreshlayout
+
+    //https://github.com/intuit/sdp
+    implementation libs.sdp.android
+
+    //https://github.com/esafirm/android-image-picker
+    implementation libs.imagepicker
+
+    //https://github.com/bumptech/glide
+    implementation libs.glide
+    annotationProcessor libs.compiler
+
+    //https://github.com/square/retrofit
+    implementation libs.retrofit
+    implementation libs.converter.gson
+
+    implementation(platform(libs.okhttp.bom))
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+
+    implementation libs.gson
+
+    //https://github.com/wasabeef/Blurry
+    implementation libs.blurry
+
+    //https://github.com/ConsultantPlus-Mobile/KeyboardHeightProvider
+    implementation libs.keyboardheightprovider
+
+    //https://github.com/siyamed/android-shape-imageview
+    implementation libs.android.shape.imageview
+
+    //https://github.com/wysaid/android-gpuimage-plus
+    implementation libs.gpuimage.plus
+
+    //https://github.com/CanHub/Android-Image-Cropper
+    implementation libs.android.image.cropper
+
+    //https://github.com/ybq/Android-SpinKit
+    implementation libs.ybq.android.spinkit
+
+    //https://developers.google.com/admob/android/quick-start
+    implementation libs.play.services.ads
+
+    //https://github.com/facebookarchive/shimmer-android
+    implementation libs.shimmer
+
+    //https://github.com/airbnb/lottie-android
+    implementation libs.lottie
+
+    //https://github.com/Zomato/AndroidPhotoFilters
+    implementation libs.androidphotofilters
+
+}

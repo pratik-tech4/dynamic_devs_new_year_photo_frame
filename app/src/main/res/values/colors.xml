@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_700">#033675</color>
+
+    <color name="colorPrimaryVariant">@color/purple_700</color>
+    <color name="light_gray">#F1F1F1</color>
+
+    <color name="bg_color">#151515</color>
+    <color name="home_txt_color_dark_brown">#6C4F07</color>
+    <color name="theme_yellow_color">#FDC522</color>
+
+    <color name="mainColor">#E5E0E0</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="BackgroundColor">#303030</color>
+    <color name="BackgroundCardColor">#252525</color>
+    <color name="grayText">#8E8E8E</color>
+    <color name="colorAccent">@color/theme_yellow_color</color>
+    <color name="tintCol">#959595</color>
+    <color name="warm_white">#F7FAFF</color>
+
+    <color name="gray">#A1A0A0</color>
+
+    <color name="image_Picker_bg_color">#CC000000</color>
+    <color name="home_icon_color">#FF6836</color>
+    <color name="home_btn_text_color">#064271</color>
+
+    <color name="blue_color_picker">#1400FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF8A00</color>
+    <color name="red_color_picker">#FC1919</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#00B2FF</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#EBFF00</color>
+    <color name="yellow_green_color_picker">#42FF00</color>
+    <color name="tool_bg">#D32020</color>
+    <color name="semi_black_transparent">#7F000000</color>
+    <color name="sticker_transparent">#BF000000</color>
+    <color name="showcase_transparent">#99000000</color>
+    <color name="transparent_tab">#00000000</color>
+    <color name="pink">#FFC0CB</color>
+
+    <color name="text_color">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:clickable="true"
+        android:contentDescription="Frame"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/bg_color"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <TextView
+            android:id="@+id/tvRemainingFrameType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:text="Unique Frames"
+            android:textColor="@color/theme_yellow_color"
+            android:textSize="@dimen/_16sdp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

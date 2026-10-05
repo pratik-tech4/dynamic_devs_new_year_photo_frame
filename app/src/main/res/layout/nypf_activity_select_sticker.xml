@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg_all_screen">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_all_screen"
+        android:alpha="0.2"/>-->
+
+    <RelativeLayout
+        android:id="@+id/layoutStickers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_bg_all_screen"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/llTabSticker"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivStickerBack"
+                style="@style/backButtonStyle"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc_btn_back" />
+
+
+            <TextView
+                style="@style/headerTittleStyle"
+                android:layout_centerInParent="true"
+                android:text="@string/sticker" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlViewPagerStickers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llTabSticker">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvInscriptionsSticker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
